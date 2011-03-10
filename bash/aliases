@@ -1,5 +1,15 @@
 # Command Enhancements
 
+# SSH aliases
+alias sau='ssh -t sau su - ideals-dspace'
+alias luk='ssh -t luk su - ideals-dspace'
+alias minerva='ssh -t minerva su - ideals-etd'
+alias mercury='ssh -t mercury su - ideals-etd'
+alias juno='ssh -t juno su - ideals-wiki'
+alias ceres='ssh -t ceres su - ideals-wiki'
+alias sophia='ssh -t sophia su - ideals-bibapp'
+alias athena='ssh -t athena su - ideals-bibapp'
+
 # Utility
 alias reload='source ~/bin/dotfiles/bash/aliases'
 alias ea='mate -w ~/bin/dotfiles/bash/aliases && reload' # Edit aliases
@@ -12,6 +22,7 @@ function cr() {
 }
 
 # Common -- Some are from Damian Conway
+alias ls='ls --color=auto'
 alias a='ls -A' # -A all except literal . ..
 alias la="ls -A -l -G"
 alias c='clear'
@@ -23,11 +34,11 @@ function cdc() {
 alias cls='clear; ls'
 alias h='history'
 alias l.='ls -d .[^.]*'
-alias l='ls -lhGt'  # -l long listing, most recent first
+alias l='ls -lahGt'  # -l long listing, most recent first
                     # -G color
-alias lh="ls -lh"
-alias ll='ls -lhG'  # -l long listing, human readable, no group info
-alias lt='ls -lt' # sort with recently modified first
+alias lh="ls -lah"
+alias ll='ls -lahG'  # -l long listing, human readable, no group info
+alias lt='ls -lat' # sort with recently modified first
 alias md='mkdir -p'
 alias s='cd ..'   # up one dir
 
